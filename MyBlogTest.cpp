@@ -13,14 +13,14 @@
 
 int main()
 {
-	MyBlog   * blog     = new MyBlog();
+    MyBlog   * blog     = new MyBlog();
 
-	Boss     * boss     = new Boss(blog);
-	CoWorker * coWorker = new CoWorker(blog);
-	Friend   * myFriend = new Friend(blog);
+    Boss     * boss     = new Boss(blog);
+    CoWorker * coWorker = new CoWorker(blog);
+    Friend   * myFriend = new Friend(blog);
 
-	blog->Subscribe(boss);
-	blog->Subscribe(coWorker);
+    blog->Subscribe(boss);
+    blog->Subscribe(coWorker);
 
     blog->SetData(std::string("My first blog"));
 
@@ -38,6 +38,6 @@ int main()
     delete myFriend;
     delete blog;
 
-	return 0;
+    return 0;
 }
 
